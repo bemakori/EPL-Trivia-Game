@@ -4,41 +4,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Questions</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="trivia.css">
+    
 </head>
 <body>
-    <div class="main-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        question count
-                    </th>
-                    <th>EPL logo Image</th>
-                    <th>Score count</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        Question
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>AnswerChoice1</li>
-                            <li>AnswerChoice2</li>
-                            <li>AnswerChoice3</li>
-                            <li>AnswerChoice4</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-            
-        </table>
+    <div class="trivia-page">
+        <div id="triviaQs">
+            <div id="tracker">
+                <div class="progress">
+                    <p id="counterText" class="tracker-placement">
+                        QuestionTracker
+                    </p>
+                    <div id="progressBar">
+                        <div id="fillProgressBar"></div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <p class="tracker-placement">
+                       Score 
+                    </p>
+                    <h1 class="tracker-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <div>
+                <h1 id="question">What's the best team in the English Premier League?</h1>
+            </div>
+
+            <div class="choices-container">
+                <button class="choices-text" data-number="1">Firtst Choice</button>
+                <button class="choices-text" data-number="2">Second Choice</button>
+                <button class="choices-text" data-number="3">Third Choice</button>
+                <button class="choices-text" data-number="4">Fourth Choice</button>
+            </div>
+
+        </div>
     </div>
+    <script src="trivia.js"></script>
 </body>
 </html>
 
@@ -48,13 +52,3 @@
 
 
 
-
-<!-- <div>
-        <h2>Track number of questions (2/10) & points</h2>
-</div>
-    
-<div>
-        <h3>Questions</h3>
-        
-<div>
-            <h3>Answers</h3> -->

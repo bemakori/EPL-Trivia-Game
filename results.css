@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    height: 300px;
+    background: url("images/english-premier-league-big-6-liverpool-manchester-city-man-united-chelsea-tottenham-arsenal.jpeg") no-repeat center center fixed; 
+    background-size: 100% 100%;
+}
+.results-container {
+    display: flex; 
+    background-color: wheat;
+    border: solid;
+    border-radius: 12px;
+    width: 20vw;
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 8em 2em;
+    margin-top: 1em;
+}
+.trivia-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.save-button {
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 1.3em;
+    margin-left: 1em;
+}
+.resultsButtons {
+    justify-content: space-between;
+    border: solid;
+    border-radius: 12px;
+    font-size: 20px;
+    margin: 0.3em;
+    padding: 0.5em;
+}
+#results-text {
+    justify-content: center;
+    padding: 1em;
+    margin: auto;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Bad Script', cursive;
+}
+.fa-futbol {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.fa-home {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.fa-crown {
+    font-size: 20px;
+    margin-left: 10px;
+}
+a:link {
+    text-decoration: none;
+}
+.fa-trophy {
+    font-size: 40px;
+    margin-left: 10px;
+}
+#username {
+    margin: auto;
+    padding:1em;
+    font-size: 0.9em;
+    border: solid;
+    width: 10em;
+    height: 3.8em;
+    border-radius: 12px;
+}
+#finalScore {
+    margin: auto;
+    font-size: 4em;
+    font-family: 'Bad Script', cursive;
+
+}
+@media screen and (max-width:1500px){
+    .results-container {
+        min-width: 16em;
+    }
+
+}

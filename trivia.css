@@ -1,0 +1,76 @@
+body {
+    height: 100%;
+    width: 100%;
+    background: url("images/EPL3.jpeg") no-repeat center center fixed; 
+    background-size: 100% 100%;
+  }
+  
+  .choices-container {
+      justify-content: center;
+      width: 40%;
+      height: 50%;
+      text-align: center;
+      padding: 0.5em;
+      margin: auto;
+  }
+  .choices-text  {
+    cursor: pointer;
+    font-size: 1.3em;
+    margin: 0.5em;
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 50%;
+    height: 18%;
+    align-content: center;
+    background-color: skyblue;
+  }
+
+#question {
+    height: 1.5em;
+    width: 33em;
+    border: solid;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    padding: 1.6em;
+    margin: auto;
+    align-content: center;
+}
+#tracker {
+    display: flex;
+    justify-content:space-evenly;
+}
+.tracker-placement {
+    text-align: center;
+    font-size: 2em;
+}
+.tracker-text {
+    text-align: center;
+}
+#progressBar {
+    width: 20em;
+    height: 2em;
+    border: 0.2em solid red;
+    margin-top: 2em;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+#fillProgressBar {
+    height: 100%;
+    background: lightgreen;
+    width: 0%;
+}
+
+@media screen and (max-width:800px) {
+
+    #question {
+        /* background-color: brown; */
+        min-width:10em;
+    }
+    .choices-container {
+        min-width: 30em;
+    }
+    .choices-text {
+        min-width: 10em;
+    }
+}

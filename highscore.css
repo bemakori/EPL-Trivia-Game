@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    height: 300px;
+    background: url("images/english-premier-league-big-6-liverpool-manchester-city-man-united-chelsea-tottenham-arsenal.jpeg") no-repeat center center fixed; 
+    background-size: 100% 100%;
+  }
+.highscores-container {
+    background-color: wheat;
+    border: solid;
+    border-radius: 12px;
+    width: 20vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2em 2.5em;
+    margin-top: 1em; 
+}
+.fa-trophy {
+    font-size: 40px;
+    margin-left: 18px;
+}
+.fa-home {
+    font-size: 35px;
+    margin-left: 10px;
+}
+#finalScore {
+    margin-top: 1em;
+    font-size: 35px;
+    font-family: 'Bad Script', cursive;
+}
+#highScoresList {
+    font-size: 28px;
+    list-style-type: none;
+    font-family: 'Bad Script', cursive;
+}
+.homeButton {
+    border: solid black;
+    border-radius: 12px;
+    margin-left: 1.2em;
+}
+a:link {
+    text-decoration: none;
+}
+@media screen and (max-width:1500px){
+    .highscores-container {
+        min-height: 25em;
+        min-width: 16em;
+    }
+
+}
